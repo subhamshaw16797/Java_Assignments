@@ -1,0 +1,21 @@
+package exersice1;
+
+import java.util.Scanner;
+
+public class SumOfCubesOfDigits {
+
+	public static void main(String[] args) {
+		
+		Scanner scn= new Scanner(System.in);
+		int n= scn.nextInt();
+		System.out.println(displaySum(n));
+
+	}
+	
+	public static int displaySum(int n) {
+		
+		int sum=0;
+		while()
+	}
+
+}

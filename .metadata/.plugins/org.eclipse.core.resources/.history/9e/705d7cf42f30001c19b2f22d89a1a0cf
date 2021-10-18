@@ -1,0 +1,23 @@
+package exersice4;
+
+import java.util.Iterator;
+import java.util.Scanner;
+
+public class PrimeNumbers {
+
+	public static void main(String[] args) {
+		
+		Scanner scn=new Scanner(System.in);
+		System.out.println("Enter range for prime number: ");
+		int n= scn.nextInt();
+		System.out.println("List of prime number between 1 to "+n+" : ");
+		System.out.println(primeNum(n));
+		
+	}
+	
+	static void primeNum(int n) {
+		
+		
+	}
+
+}

@@ -1,0 +1,11 @@
+package exersice3;
+
+public class FindFibonacciTerm {
+
+	public static void main(String[] args) {
+		
+		
+
+	}
+
+}

@@ -1,0 +1,25 @@
+package exercise5;
+
+import java.util.Scanner;
+
+public class SumOfNaturalNumbers {
+
+	public static void main(String[] args) {
+		
+		Scanner scn= new Scanner(System.in);
+		System.out.println("Enter a number to find natural numbers: ");
+		int n= scn.nextInt();
+		System.out.println("Natural numbers that are divisiable by 3 or 5 are: "+ calculateSum(n));
+
+	}
+	
+	//Calculate Sum
+	static int calculateSum(int n) {
+		int sum=0;
+		for(int i=1;i<=n;i++) {
+			
+		}
+		return sum;
+	}
+
+}

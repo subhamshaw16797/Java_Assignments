@@ -1,0 +1,15 @@
+package exercise5;
+
+public class SumOfNaturalNumbers {
+
+	public static void main(String[] args) {
+		
+		
+
+	}
+	
+	static int findNaturalNum(int num) {
+		
+	}
+
+}

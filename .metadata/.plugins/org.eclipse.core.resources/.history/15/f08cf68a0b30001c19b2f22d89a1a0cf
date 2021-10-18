@@ -1,0 +1,11 @@
+package exersice1;
+
+public class SumOfCubesOfDigits {
+
+	public static void main(String[] args) {
+		
+		
+
+	}
+
+}

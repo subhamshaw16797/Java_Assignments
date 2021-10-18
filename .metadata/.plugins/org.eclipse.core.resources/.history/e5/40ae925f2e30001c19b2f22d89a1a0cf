@@ -1,0 +1,15 @@
+package exersice4;
+
+import java.util.Scanner;
+
+public class PrimeNumbers {
+
+	public static void main(String[] args) {
+		
+		Scanner scn=new Scanner(System.in);
+		System.out.println("Enter a number prime numbers: ");
+		int n= scn.nextInt();
+
+	}
+
+}
