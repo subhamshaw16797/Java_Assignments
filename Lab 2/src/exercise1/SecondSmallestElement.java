@@ -19,8 +19,28 @@ public class SecondSmallestElement {
 		{  
 			//reading array elements from the user 
 			arr[i]=scn.nextInt();  
-		}  
-
+		}
+		
+		System.out.println("Smallest element in the given array is: "+ secondSmallestNumber(arr));
+		
+	}
+	
+	
+	static int secondSmallestNumber(int[] a) {
+		int smallest1= a[0];
+		int smallest2= a[0];
+		
+		for(int i=1; i<a.length; i++) {
+			if(a[i]<smallest1) {
+				smallest2=smallest1;
+				smallest1=a[i];
+			}
+			
+			else if (a[i]<smallest2 && a[i]!=smallest1 || smallest1==smallest2) {
+				smallest2=a[i];
+			}
+		}
+		return smallest2;
 	}
 
 }
