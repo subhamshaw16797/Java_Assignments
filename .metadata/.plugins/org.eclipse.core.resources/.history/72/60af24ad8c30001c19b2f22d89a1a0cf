@@ -1,0 +1,23 @@
+package exercise7;
+
+public class IncreasingNumber {
+
+	public static void main(String[] args) {
+		
+		
+
+	}
+	
+	//
+	static boolean checkNumber(int number) {
+		
+		int lastDigit= number%10;
+		number/=10;
+		
+		
+		
+		
+		
+	}
+
+}

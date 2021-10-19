@@ -1,0 +1,31 @@
+package exercise8;
+
+import java.util.Scanner;
+
+public class PowerOfTwo {
+
+	public static void main(String[] args) {
+		
+		Scanner scn= new Scanner(System.in);
+		System.out.println("Enter a number to check for power of two: ");
+		int n= scn.nextInt();
+		if(checkNumber(n));
+
+	}
+	
+	//checking power of 2 or not
+	
+	static boolean checkNumber(int n) {
+		
+		if(n==0)
+			return false;
+		while(n!=0) {
+			if(n%2!=0) {
+				return false;
+			}
+			n/=2;
+		}
+		return true;
+	}
+
+}
