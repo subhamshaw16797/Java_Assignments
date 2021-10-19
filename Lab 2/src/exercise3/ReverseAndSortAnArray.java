@@ -59,11 +59,7 @@ public class ReverseAndSortAnArray {
 		//sort the reversed array
 		System.out.println("Reverse Sorted Array is: ");
 		Arrays.sort(arr);
-		int[] tempArr=new int [arr.length];
-		for(int x=0; x<=arr.length;x++) {
-			tempArr=arr;
-		}
-		return tempArr;
+		return arr;
 	}
 
 }

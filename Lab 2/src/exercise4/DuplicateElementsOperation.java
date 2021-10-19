@@ -47,34 +47,17 @@ public class DuplicateElementsOperation {
 		}
 		
 		System.out.println("After removing duplicate elements: ");
-		int[] remArr= new int[arr.length];
-		for(int y=0; y<arr.length;y++) {
-			if(arr[y]!=0)
-				remArr=arr;
+		for(int remDupArr: arr) {
+			if(remDupArr!=0) {
+				System.out.print(remDupArr+" ");
+			}
 		}
-		
-		for(int finalArr: remArr)
-			System.out.print(finalArr+" ");
-		System.out.println();
 		
 		//sort the reversed array
 		System.out.println("Sorted Array after removing duplicate elements is: ");
 		Arrays.sort(arr);
-		int[] sortArr=new int [arr.length];
-		for(int x=0; x<=arr.length;x++) {
-			sortArr=arr;
-		}
-		return sortArr;
+		return arr;
 		
-//		//logic for remove duplicate elements from the array
-//		System.out.println("After removing duplicate elements: ");
-//		int[] remArr= new int [arr.length];
-//		for(int i=0; i<arr.length;i++) {
-//			if(arr[i]!=0) {
-//				remArr= arr;
-//			}
-//		}
-//		return remArr;
 	}
 
 }
