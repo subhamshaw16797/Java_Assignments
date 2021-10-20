@@ -6,7 +6,7 @@ public class SortString {
 
 	public static void main(String[] args) {
 		
-		String [] stringArray = {"ab", "aB", "c", "0", "2", "1Ad", "a10"};
+		String [] stringArray = {"ab", "Ba", "c", "Sub", "2", "1Ad", "a10"};
 	    sortString(stringArray);
 
 	}

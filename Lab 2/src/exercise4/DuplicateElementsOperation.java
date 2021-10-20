@@ -55,7 +55,7 @@ public class DuplicateElementsOperation {
 		}
 		
 		System.out.println();
-		//sort the reversed array
+		//sort the array after removing duplicates
 		System.out.println("Sorted Array after removing duplicate elements is: ");
 		Arrays.sort(arr);
 		return arr;
