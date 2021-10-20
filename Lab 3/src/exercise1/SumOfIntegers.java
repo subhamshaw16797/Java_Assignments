@@ -27,6 +27,8 @@ public class SumOfIntegers {
 		
 		System.out.println();
 		System.out.println("Sum of integers is: "+sum);
+		
+		
 		//closing resourse
 		scn.close();
 	}

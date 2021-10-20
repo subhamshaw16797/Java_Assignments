@@ -32,6 +32,9 @@ public class DuplicateElementsOperation {
 		modifyArray(arr);
 		for(int modArr: arr)
 			System.out.print(modArr+" ");
+		
+		//closing of resource
+		scn.close();
 
 	}
 	
@@ -48,11 +51,10 @@ public class DuplicateElementsOperation {
 		
 		System.out.println("After removing duplicate elements: ");
 		for(int remDupArr: arr) {
-			if(remDupArr!=0) {
-				System.out.print(remDupArr+" ");
-			}
+			System.out.print(remDupArr+" ");
 		}
 		
+		System.out.println();
 		//sort the reversed array
 		System.out.println("Sorted Array after removing duplicate elements is: ");
 		Arrays.sort(arr);
