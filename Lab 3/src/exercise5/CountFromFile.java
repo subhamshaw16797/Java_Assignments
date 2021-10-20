@@ -12,7 +12,7 @@ public class CountFromFile {
 		{
 			int lines=0,chars=0,words=0;
 			int code=0;
-			FileInputStream fis = new FileInputStream("sample.txt");
+			FileInputStream fis = new FileInputStream("E:\\Program\\Subham Kumar Shaw\\java_assignments\\Lab 3\\src\\exercise5\\sample.txt");
 			while(fis.available()!=0)
 			{
 				code = fis.read();
