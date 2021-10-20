@@ -6,6 +6,7 @@ public class SumOfCubesOfDigits {
 
 	public static void main(String[] args) {
 		
+		//ask for user input
 		Scanner scn= new Scanner(System.in);
 		System.out.println("Enter a number to sum of cubes: ");
 		int num= scn.nextInt();
@@ -13,6 +14,7 @@ public class SumOfCubesOfDigits {
 
 	}
 	
+	//create a method to find sum of cubes of digit
 	public static int displaySum(int num) {
 		
 		int sum=0;
