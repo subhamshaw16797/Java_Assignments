@@ -6,6 +6,7 @@ public class TrafficLightSimulator {
 
 	public static void main(String[] args) {
 		
+		//ask for user input
 		Scanner scn= new Scanner(System.in);
 		
 		System.out.println("1) Red");
