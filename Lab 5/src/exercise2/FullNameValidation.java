@@ -17,14 +17,29 @@ public class FullNameValidation {
 		//User input for first name
 		System.out.println("Enter your first name: ");
 		String fName= scn.next();
+		System.out.println("Enter your last name: ");
+		String lName= scn.next();
 		
-		//logic for extracting each char from string
-		int temp = 0;
+		try {
+		
+			if(!(fName.isEmpty() || lName.isEmpty())) {
+				System.out.println("Full name is: "+fName+" "+lName);
+			}
+			
+		} catch (InvalidNameException in) {
+			System.out.println("Please give proper name.");
+		}
+	}
+}
+
+
+//logic for extracting each char from string
+		/*int temp = 0;
 		for(int i= 0; i<fName.length();i++) {
 			char ch;
-            ch=fName.charAt(i);
-            if(ch<'A' || ch>'Z' && ch<'a' || ch>'z')
-                 temp=1;
+          ch=fName.charAt(i);
+          if(ch<'A' || ch>'Z' && ch<'a' || ch>'z')
+               temp=1;
 		}
 		
 		//try block for first name
@@ -61,10 +76,4 @@ public class FullNameValidation {
 			else {
 				throw new InvalidNameException("Name is not valid.");
 			}
-				
-			
-		} catch (InvalidNameException in) {
-			System.out.println("Please give proper name.");
-		}
-	}
-}
+				*/
