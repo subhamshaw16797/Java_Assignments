@@ -24,8 +24,14 @@ public class EmployeeDetails {
 	public static void main(String[] args) {
 		
 		Scanner scn= new Scanner(System.in);
+		System.out.println("");
+		String name= scn.nextLine();
+		int id= scn.nextInt();
+		double salary= scn.nextDouble();
+		String desig= scn.nextLine();
 		
-		EmployeeDetails emp1= new EmployeeDetails();
+		
+//		EmployeeDetails emp1= new EmployeeDetails();
 
 	}
 
