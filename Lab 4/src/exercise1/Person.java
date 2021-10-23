@@ -4,22 +4,16 @@ public class Person {
 	
 	private String name;
 	private float age;
-	Account acc;
 	
-	//constructor
-	public Person(String name, float age, Account acc) {
+	public Person(String name, float age) {
 		this.name= name;
-		this.age=age;
-		this.acc=acc;
-		
+		this.age= age;
 	}
-	
-	
 	
 	//toString method
 	@Override
 	public String toString() {
-		return "Person [name=" + name + ", age=" + age + ", acc=" + acc + "]";
+		return "Person [name=" + name + ", age=" + age + "]";
 	}
 	
 

@@ -2,14 +2,20 @@ package exercise1;
 
 public class Account {
 	
-	private static long accNum= (long)(Math.random()* 1000L);
+	//declaring variables
+	private static long accNum=1000;
+	static double minBal=500;
 	private double balance;
 	private String accHolder;
+	Person p;
 	
+	//constructor
+	public Account(Person p) {
+		this.p=p;
+		
+	}
 	
-	
-	
-	
+	//getter & setters
 	public static long getAccNum() {
 		return accNum;
 	}
@@ -30,25 +36,28 @@ public class Account {
 		return accHolder;
 	}
 
-	public void setAccHolder(String accHolder) {
-		this.accHolder = accHolder;
+	public void setAccHolder(Person p) {
+		this.accHolder = p.getName();
 	}
-
+	
+	//toString method
+	@Override
+	public String toString() {
+		return "Account [balance=" + balance + ", accHolder=" + accHolder + ", p=" + p + "]";
+	}
+	
+	
+	//logic for deposit
 	public void deposit(double depAmount) {
-		balance+= depAmount;
-		System.out.println("Your total balance is: "+balance);
+		this.balance+= depAmount;
+		System.out.println("Your total balance is: "+this.balance);
 	}
 	
+	
+	//declaring withdraw method for future purpose
 	public void withdraw(double withAmount) {
-		 if(balance>=withAmount) {
-			 balance-=withAmount;
-			 System.out.println("Remaining account balance is: "+balance);
-		 }
-		 else {
-			System.out.println("Your don't have sufficient amount to withdraw. your available balance is: "+balance);
-		}
+		 
 	}
-	
 	
 	
 }
