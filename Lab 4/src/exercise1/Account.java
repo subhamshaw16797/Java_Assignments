@@ -9,6 +9,10 @@ public class Account {
 	private String accHolder;
 	Person p;
 	
+	public Account() {
+		
+	}
+	
 	//constructor
 	public Account(Person p) {
 		this.p=p;
@@ -49,8 +53,10 @@ public class Account {
 	
 	//logic for deposit
 	public void deposit(double depAmount) {
-		this.balance+= depAmount;
-		System.out.println("Your total balance is: "+this.balance);
+		if(depAmount>0) {
+			this.balance+= depAmount;
+			System.out.println("Your total balance is: "+this.balance);
+		}
 	}
 	
 	

@@ -1,4 +1,5 @@
-content_assist_autoactivation_triggers_java=abcdefghijklmnopqrstuvwxyz
+content_assist_autoactivation_triggers_java=abcdefghijklmnopqrstuvwxyz.()ABCDEFGHIJKLMNOPQRSTUVWXYZ
+content_assist_autoactivation_triggers_javadoc=abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ.
 content_assist_category_order=org.eclipse.jdt.ui.javaChainProposalCategory\:0\u0000org.eclipse.jdt.ui.javaTypeProposalCategory\:65536\u0000org.eclipse.jdt.ui.textProposalCategory\:65537\u0000org.eclipse.jdt.ui.javaAllProposalCategory\:65538\u0000org.eclipse.jdt.ui.javaPostfixProposalCategory\:65539\u0000org.eclipse.jpt.jaxb.ui.jaxbCompletionProposals\:5\u0000org.eclipse.jpt.jpa.ui.jpaProposalCategory\:6\u0000org.eclipse.jst.ws.jaxws.ui.jaxwsProposalComputer\:7\u0000org.eclipse.mylyn.java.ui.javaAllProposalCategory\:65543\u0000org.eclipse.pde.api.tools.ui.apitools_proposal_category\:9\u0000org.eclipse.jdt.ui.templateProposalCategory\:65545\u0000org.eclipse.jdt.ui.swtProposalCategory\:65546\u0000org.eclipse.jdt.ui.javaNoTypeProposalCategory\:65547\u0000
 content_assist_disable_completion_trigger_chars=true
 content_assist_disabled_computers=org.eclipse.jdt.ui.javaNoTypeProposalCategory\u0000org.eclipse.jdt.ui.javaTypeProposalCategory\u0000org.eclipse.jdt.ui.javaChainProposalCategory\u0000
