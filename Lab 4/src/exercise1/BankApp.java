@@ -16,7 +16,8 @@ public class BankApp {
 		System.out.println(s1.balance);
 		System.out.println(c1.balance);
 		
-		
+		s1.deposit(2000);
+		c1.withdraw(2000);
 	}
 
 }

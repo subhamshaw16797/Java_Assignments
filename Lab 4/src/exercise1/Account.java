@@ -1,25 +1,25 @@
 package exercise1;
 
 public class Account {
-	
-	//declaring variables
-	private static long accNum=1000;
-	static double minBal=500;
+
+	// declaring variables
+	private static long accNum = 1000;
+	static double minBal = 500;
 	private double balance;
 	private String accHolder;
 	Person p;
-	
+
 	public Account() {
-		
+
 	}
-	
-	//constructor
+
+	// constructor
 	public Account(Person p) {
-		this.p=p;
-		
+		this.p = p;
+
 	}
-	
-	//getter & setters
+
+	// getter & setters
 	public static long getAccNum() {
 		return accNum;
 	}
@@ -43,27 +43,24 @@ public class Account {
 	public void setAccHolder(Person p) {
 		this.accHolder = p.getName();
 	}
-	
-	//toString method
+
+	// toString method
 	@Override
 	public String toString() {
 		return "Account [balance=" + balance + ", accHolder=" + accHolder + ", p=" + p + "]";
 	}
-	
-	
-	//logic for deposit
+
+	// logic for deposit
 	public void deposit(double depAmount) {
-		if(depAmount>0) {
-			this.balance+= depAmount;
-			System.out.println("Your total balance is: "+this.balance);
+		if (depAmount > 0) {
+			this.balance += depAmount;
+			System.out.println("Your total balance is: " + this.balance);
 		}
 	}
-	
-	
-	//declaring withdraw method for future purpose
+
+	// declaring withdraw method for future purpose
 	public void withdraw(double withAmount) {
-		 
+
 	}
-	
-	
+
 }

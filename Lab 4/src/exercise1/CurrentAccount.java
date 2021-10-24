@@ -7,7 +7,7 @@ public class CurrentAccount extends Account{
 	String name= this.getAccHolder();
 	double balance= this.getBalance();
 	static long accountNum= Account.getAccNum();
-	
+	Person p;
 	
 	//constructor
 	public CurrentAccount() {
@@ -37,7 +37,7 @@ public class CurrentAccount extends Account{
 		else if (this.balance>=withAmount) {
 			this.balance-=withAmount;
 			this.overDraftLimit=checkOverDraft;
-			System.out.println(this.name+" having account number "+CurrentAccount.accountNum+" has remaining balance is:"+this.balance);
+			System.out.println(p.getName()+" having account number "+CurrentAccount.accountNum+" has remaining balance is:"+this.balance);
 		}
 		
 		else {
@@ -46,11 +46,12 @@ public class CurrentAccount extends Account{
 		
 	}
 	
-	//creating account method
+	// creating account method
 	public void createAccount(Person p, double initBal) {
-		this.balance=initBal;
-		long accNum= getAccNum()+1;
-		System.out.println("Your account name is: "+p.getName()+" ,your account number is: "+accNum+" and your balance is: "+balance);
+		this.balance = initBal;
+		long accNum = getAccNum() + 1;
+		System.out.println("Your account name is: " + p.getName() + " ,your account number is: " + accNum
+				+ " and your balance is: " + balance);
 	}
 	
 }
