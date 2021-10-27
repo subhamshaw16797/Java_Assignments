@@ -1,4 +1,4 @@
-package exercise5;
+package com.exercise5;
 
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;

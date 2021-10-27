@@ -1,4 +1,4 @@
-package exercise7;
+package com.exercise7;
 
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
