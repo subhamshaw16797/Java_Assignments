@@ -1,4 +1,4 @@
-package exercise4;
+package com.exercise4;
 
 /*
  * Create a method which accepts an integer array and removes all the duplicates in the array.

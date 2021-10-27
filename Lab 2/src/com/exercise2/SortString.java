@@ -1,4 +1,4 @@
-package exercise2;
+package com.exercise2;
 
 /*
  * Create a method that can accept an array of String objects and sort in alphabetical order.

@@ -1,4 +1,4 @@
-package exercise1;
+package com.exercise1;
 
 /*
  * Create a method which accepts an array of integer elements and return the second smallest element in the array.
