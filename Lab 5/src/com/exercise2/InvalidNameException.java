@@ -1,4 +1,4 @@
-package exercise2;
+package com.exercise2;
 
 public class InvalidNameException extends RuntimeException {
 	
