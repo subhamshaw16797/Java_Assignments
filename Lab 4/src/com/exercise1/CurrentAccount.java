@@ -1,4 +1,4 @@
-package exercise1;
+package com.exercise1;
 
 public class CurrentAccount extends Account{
 	
