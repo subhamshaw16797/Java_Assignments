@@ -29,7 +29,7 @@ public class SumOfIntegers {
 		System.out.println("Sum of integers is: "+sum);
 		
 		
-		//closing resourse
+		//closing resource
 		scn.close();
 	}
 
