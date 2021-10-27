@@ -1,5 +1,3 @@
-//This pgm is not completed yet.
-
 package exercise4;
 
 /*
@@ -13,58 +11,40 @@ public class DuplicateElementsOperation {
 
 	public static void main(String[] args) {
 
-		Scanner scn = new Scanner(System.in);
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter the size of array");
 
-		// to take size of the array from user
-		System.out.println("Enter the size of an array: ");
-		int length = scn.nextInt();
+		int size = sc.nextInt();
 
-		int[] arr = new int[length];
-		System.out.println("Enter " + length + " elements in array: ");
-
-		for (int i = 0; i < length; i++) {
-			// reading array elements from the user
-			arr[i] = scn.nextInt();
+		int[] arr = new int[size];
+		System.out.println("Enter array elemts: ");
+		for (int i = 0; i < size; i++) {
+			arr[i] = sc.nextInt();
 		}
-		System.out.println("Original Array is: ");
-
-		for (int orArr : arr)
-			System.out.print(orArr + " ");
-
-		System.out.println();
-
-		modifyArray(arr);
-		for (int modArr : arr)
-			System.out.print(modArr + " ");
-
-		// closing of resource
-		scn.close();
+		int a = modifyArray(arr);
+		System.out.println("Resultant array: ");
+		for (int i = a - 1; i >= 0; i--) {
+			System.out.print(arr[i] + "\t");
+		}
 
 	}
 
-	// method remove duplicate elements from an array and then sort the array in
-	// descending order.
-	static int[] modifyArray(int[] arr) {
-
-		// logic for identify duplicate elements in array
-		for (int i = 0; i < arr.length; i++) {
-			for (int j = 0; j < arr.length; j++) {
-				if (arr[i] == arr[j])
-					arr[j] = 0;
+	public static int modifyArray(int[] arr) {
+		Arrays.sort(arr);
+		int n = arr.length;
+		int temp[] = new int[n];
+		int j = 0;
+		for (int i = 0; i < (n - 1); i++) {
+			if (arr[i] != arr[i + 1]) {
+				temp[j++] = arr[i];
 			}
 		}
+		temp[j++] = arr[n - 1];
 
-		System.out.println("After removing duplicate elements: ");
-		for (int remDupArr : arr) {
-			System.out.print(remDupArr + " ");
+		for (int i = 0; i < j; i++) {
+			arr[i] = temp[i];
 		}
-
-		System.out.println();
-		// sort the array after removing duplicates
-		System.out.println("Sorted Array after removing duplicate elements is: ");
-		Arrays.sort(arr);
-		return arr;
-
+		return j;
 	}
 
 }

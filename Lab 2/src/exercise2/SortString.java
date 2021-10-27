@@ -1,5 +1,3 @@
-// This pgm is not completed.
-
 package exercise2;
 
 /*
@@ -8,21 +6,47 @@ package exercise2;
  * Return the resulting array.
  */
 import java.util.Arrays;
+import java.util.Scanner;
 
 public class SortString {
 
 	public static void main(String[] args) {
 
-		String[] stringArray = { "ab", "Ba", "c", "Sub", "2", "1Ad", "a10" };
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter the size of the array: ");
+		int size = Integer.parseInt(sc.nextLine());
 
-		// Invoking the method
-		sortString(stringArray);
+		String[] names = new String[size];
+		System.out.println("Enter the names");
+		for (int i = 0; i < size; i++) {
+			names[i] = sc.nextLine();
+		}
+
+		String s = sortString(names);
 
 	}
 
-	// method to sort the string in alphabetical order.
-	public static void sortString(String[] sArr) {
-		Arrays.sort(sArr);
-		System.out.println(Arrays.toString(sArr));
+	public static String sortString(String[] names) {
+		Arrays.sort(names);
+		int len = names.length;
+		int mid = len / 2;
+		System.out.println("Resultant array is: ");
+		if (len % 2 == 0) {
+			for (int i = 0; i < mid; i++) {
+				System.out.println(names[i].toUpperCase());
+			}
+			for (int j = mid; j < len; j++) {
+				System.out.println(names[j].toLowerCase());
+			}
+		} else {
+			for (int i = 0; i < (mid) + 1; i++) {
+				System.out.println(names[i].toUpperCase());
+			}
+			for (int j = (mid + 1); j < len; j++) {
+				System.out.println(names[j].toLowerCase());
+			}
+		}
+
+		return null;
 	}
 }
