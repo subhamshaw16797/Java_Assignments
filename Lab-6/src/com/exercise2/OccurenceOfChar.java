@@ -29,7 +29,13 @@ public class OccurenceOfChar {
 		System.out.println();
 
 		// invoking the function
-		getValues(arr);
+		Map<Character, Integer> map= getValues(arr);
+		
+		// Fetching each char and the occurrence of the each char
+		// and printing the same
+		for (Map.Entry<Character, Integer> entry : map.entrySet()) {
+			System.out.println(entry.getKey() + " : " + entry.getValue());
+				}
 	}
 
 	// creating a method to count each char occurrence in char array
@@ -51,12 +57,6 @@ public class OccurenceOfChar {
 				// putting this char to charCountMap with 1 as it's value
 				map.put(ch, 1);
 			}
-		}
-
-		// Fetching each char and the occurrence of the each char
-		// and printing the same
-		for (Map.Entry<Character, Integer> entry : map.entrySet()) {
-			System.out.println(entry.getKey() + " : " + entry.getValue());
 		}
 
 		// return the resultant map to the method

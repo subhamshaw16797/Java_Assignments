@@ -23,7 +23,12 @@ public class SortedList {
 		hMap.put("CSS",45);
 		
 		//invoking the method
-		getValue(hMap);
+		List<Integer> list= getValue(hMap);
+		
+		System.out.println();
+		for(Integer ele: list) {
+			System.out.println("Values after sorting: "+ele);
+		}
 
 	}
 	
@@ -44,11 +49,6 @@ public class SortedList {
 		
 		//sorting the list
 		Collections.sort(list);
-		
-		System.out.println();
-		for(Integer ele: list) {
-			System.out.println("Values after sorting: "+ele);
-		}
 		
 		return list;
 	}
