@@ -1,6 +1,6 @@
 package com.exercise1;
 
-public class SalaryAccount extends Account{
+public class SavingsAccount extends Account{
 	
 	//variables
 	static final double MINIMUM_BALANCE=500;
@@ -8,12 +8,12 @@ public class SalaryAccount extends Account{
 	double balance= this.getBalance();
 	Person p;
 	
-	public SalaryAccount() {
+	public SavingsAccount() {
 		super();
 	}
 	
 	//constructor
-	public SalaryAccount(Person p) {
+	public SavingsAccount(Person p) {
 		super(p);
 	}
 	

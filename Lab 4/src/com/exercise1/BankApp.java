@@ -7,7 +7,7 @@ public class BankApp {
 		Person p1= new Person("smith", 24);
 		Person p2= new Person("Kathy", 23);
 		
-		SalaryAccount s1= new SalaryAccount();
+		SavingsAccount s1= new SavingsAccount();
 		CurrentAccount c1= new CurrentAccount();
 		
 		s1.createAccount(p1,2000);
