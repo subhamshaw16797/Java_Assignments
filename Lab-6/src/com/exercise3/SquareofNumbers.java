@@ -1,3 +1,7 @@
+/*
+ * Create a method which accepts an array of numbers and returns the numbers and their squares in Hashmap
+ */
+
 package com.exercise3;
 
 import java.util.HashMap;
@@ -9,10 +13,12 @@ public class SquareofNumbers {
 	static Scanner scn= new Scanner(System.in);
 	
 	public static void main(String[] args) {
-		
+	
+	// Taking input from user
 	System.out.println("Enter Size of the array: ");
 	int size= scn.nextInt();
 	
+	// Asking for array size
 	int[] arr= new int[size];
 	
 	System.out.println();
@@ -38,11 +44,12 @@ public class SquareofNumbers {
 	}
 	
 	}
-	
 
+	// Creating a method to perform the square of numbers
 	public static Map<Integer, Integer> getSquares(int[] arr) {
 		Map<Integer, Integer> map= new HashMap<>();
 		
+		// taking each number from array and making the square of that number and add on the map
 		for(int n: arr) {
 			map.put(n, n*n);
 		}
